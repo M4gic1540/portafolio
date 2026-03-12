@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg:           #0a0a12;
+  --color-surface:      #10101e;
+  --color-surface-alt:  #1a1a2e;
+  --color-accent:       #6366f1;
+  --color-accent-2:     #8b5cf6;
+  --color-accent-light: #a5b4fc;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: theme(colors.slate.200);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+p { margin: 0; }
+
+a { text-decoration: none; }
+
+@keyframes spin-ring {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.animate-spin-ring-slow {
+  animation: spin-ring 12s linear infinite;
+}
+
+.animate-spin-ring-slower {
+  animation: spin-ring 20s linear infinite reverse;
+}
