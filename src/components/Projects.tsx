@@ -28,7 +28,7 @@ const projects: Project[] = [
       'Este mismo portfolio, construido con React, TypeScript y Vite. Diseño responsive con tema oscuro y Tailwind CSS.',
     tags: ['React', 'TypeScript', 'Vite', 'Tailwind'],
     status: 'Personal',
-    repo: 'https://github.com/tomas-gonzalez-borje',
+    repo: 'https://github.com/M4gic1540/portafolio',
   },
     {
     title: 'E-commerce',
